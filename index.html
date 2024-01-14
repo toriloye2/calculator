@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet"  href="style/calc.css">
+    <script src="js/calc.js"></script>
+  
+</head>
+<body>
+    <!--calculator-->
+    <div class = "calculator">
+
+        <!--display-->
+        <input type ="text" style="color:#fff" class="display" id="output" disabled >
+        <!--keys-->
+        <div class="keys">
+            <!-- 4 rows of keys -->
+            <div class="row">
+                <button value = "7" onclick="fordisplay(7)">7</button>
+                <button value = "8" onclick="fordisplay(8)">8</button>
+                <button value = "9" onclick="fordisplay(9)">9</button>
+                <button value="+" onclick="fordisplay('+')"  class="operator" >+</button>
+            </div>
+            <div class="row">
+                <button value = "4"onclick="fordisplay(4)" >4</button>
+                <button value = "5" onclick="fordisplay(5)">5</button>
+                <button value = "6" onclick="fordisplay(6)">6</button>
+                <button value="-" class="operator" onclick="fordisplay('-')" >-</button>
+            </div>
+            <div class="row">
+                <button value = "1" onclick="fordisplay(1)">1</button>
+                <button value = "2"  onclick="fordisplay(2)">2</button>
+                <button value = "3" onclick="fordisplay(3)" >3</button>
+                <button value="*" class="operator" onclick="fordisplay('*')" >x</button>
+            </div>
+            <div class="row">
+                <button value = "."  onclick="fordisplay('.')" >.</button>
+                <button value = "0" onclick="fordisplay(0)" >0</button>
+                <button value = "()" class="operator" onclick="bracket()" >()</button>
+                <button value="/" class="operator" onclick="fordisplay('/')">/</button>
+            </div>
+            <div class="row">
+                <button value = "C"  onclick="forclear()"class="operator" >C</button>
+                <button value = "AC" onclick="clearAll()" class="operator" >AC</button>
+                <button value = "+/-" class="operator" onclick="reverseOp()" >+/-</button>
+                <button value="=" class="operator" onclick="calculate()">=</button>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+
+</body>
+</html>
